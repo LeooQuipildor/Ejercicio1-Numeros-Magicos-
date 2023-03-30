@@ -20,7 +20,35 @@
 
     </header>
     <main>
-      
+      <section>
+        <h1 class="text-light text-center display-2 fw-bold text-shadow pt-5 pb-4">Numeros Magicos</h1>
+      </section>
+      <section>
+        <article>
+          <div class="card mx-5 card-reglas">
+            <h5 class="card-header text-center text-light">Reglas</h5>
+            <div class="card-body">
+              <p class="card-text text-light lead">Al hacer clic en el botón "Comenzar juego", la CPU generará un número aleatorio que usted deberá adivinar. Deberá ingresar un número y presionar el botón "Enviar". Al hacer clic en este botón, la máquina le indicará si el número ingresado es mayor o menor al número generado por la CPU. Si logra adivinar el número, ganará el juego; de lo contrario, perderá.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <div class="text-center">
+          <button class="btn btn-outline-light btn-lg btn-comenzar text-dark p-3 fw-bold mt-5" onclick="getRandomColor()">Comenzar juego</button>
+        </div>
+        <form id="formulario">
+          <div class="mb-3 text-center container">
+            <div class="row justify-content-center">
+              <div class="col-4 text-center mt-5">
+                <label for="" class="form-label text-light lead">Ingrese un numero</label>
+                <input type="number" class="form-control" placeholder="Ej:10" required>
+                <button type="submit" class="btn btn-dark mt-3 card-reglas text-light fw-bolder">Enviar numero</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="bg-dark text-light py-3 text-center">
       <p>&copy; Todos los derechos reservados</p>
