@@ -28,19 +28,40 @@
           Numeros Magicos
         </h1>
       </section>
-      <section>
-        <article>
-          <div class="card mx-5 card-reglas">
-            <h5 class="card-header text-center text-light">Reglas</h5>
-            <div class="card-body">
-              <p class="card-text text-light lead">
-                Al hacer clic en el botón "Comenzar juego", la CPU generará un
-                número aleatorio que usted tendra que adivinar. Deberá ingresar un
-                número entre 1 y 10 y presionar el botón "Enviar". Al hacer clic en este
-                botón, la máquina le indicará si el número ingresado es mayor o
-                menor al número generado por la CPU. Solo tiene 3 intentos si logra adivinar el
-                número, ganará el juego; de lo contrario, perderá.
-              </p>
+      <section class="container d-flex justify-content-center">
+        <article class="col-12">
+          <div class="accordion mx-5" id="accordionExample">
+            <div class="accordion-item card-reglas">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button text-light card-reglas btn-acordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h2>Reglas</h2>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show btn-acordion"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body card-reglas">
+                  <p class="text-light lead">
+                    Al hacer clic en el botón "Comenzar juego", la CPU generará
+                    un número aleatorio que usted tendra que adivinar. Deberá
+                    ingresar un número entre 1 y 10 y presionar el botón
+                    "Enviar". Al hacer clic en este botón, la máquina le
+                    indicará si el número ingresado es mayor o menor al número
+                    generado por la CPU. Solo tiene 3 intentos si logra adivinar
+                    el número, ganará el juego; de lo contrario, perderá.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -48,7 +69,7 @@
       <section>
         <div class="text-center">
           <button
-          id="buttonComenzar"
+            id="buttonComenzar"
             class="btn btn-outline-light btn-lg btn-comenzar text-dark p-3 fw-bold mt-5"
             onclick="getRandomNumber()"
           >
@@ -84,6 +105,7 @@
     </main>
     <footer class="bg-dark text-light py-3 text-center">
       <p>&copy; Todos los derechos reservados</p>
+      <p>Quipildor Leandro Agustín</p>
     </footer>
 
     <script src="/js/app.js"></script>

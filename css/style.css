@@ -15,8 +15,18 @@ main{
 
 .card-reglas{
     background-color: #051937;
+    border-color: #051937;
 }
 
 .btn-comenzar{
     background-color: #a8eb12;
+}
+
+.btn-acordion:not(.collapsed){
+    background-color: #051937;
+}
+
+.btn-acordion::after {
+    background-color: white;
+    border-radius: 100%;
 }
