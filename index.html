@@ -35,10 +35,10 @@
             <div class="card-body">
               <p class="card-text text-light lead">
                 Al hacer clic en el botón "Comenzar juego", la CPU generará un
-                número aleatorio que usted deberá adivinar. Deberá ingresar un
-                número y presionar el botón "Enviar". Al hacer clic en este
+                número aleatorio que usted tendra que adivinar. Deberá ingresar un
+                número entre 1 y 10 y presionar el botón "Enviar". Al hacer clic en este
                 botón, la máquina le indicará si el número ingresado es mayor o
-                menor al número generado por la CPU. Si logra adivinar el
+                menor al número generado por la CPU. Solo tiene 3 intentos si logra adivinar el
                 número, ganará el juego; de lo contrario, perderá.
               </p>
             </div>
@@ -48,6 +48,7 @@
       <section>
         <div class="text-center">
           <button
+          id="buttonComenzar"
             class="btn btn-outline-light btn-lg btn-comenzar text-dark p-3 fw-bold mt-5"
             onclick="getRandomNumber()"
           >
@@ -65,7 +66,7 @@
                   type="number"
                   class="form-control"
                   id="input-enviar-numero"
-                  placeholder="Ej:10"
+                  placeholder="Ej: 4"
                   required
                 />
                 <button
@@ -78,6 +79,7 @@
             </div>
           </div>
         </form>
+        <p id="pIntentos" class="text-light lead text-center fw-bolder"></p>
       </section>
     </main>
     <footer class="bg-dark text-light py-3 text-center">
